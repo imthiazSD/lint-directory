@@ -54,7 +54,7 @@ Inside a Project, Child directories should always contain 3 directories
 
 ```angular2
 
-Root\
+Root\ 
     Child1\
           1\
           2\
@@ -66,7 +66,7 @@ Root\
 WARNING : Directory 'Root/Child2' does not mactch the required count of directories
 ```
 ### Usecase 2
-Inside a Project Child, directories should always contain 3 directories named 1,2,3
+Inside a Project, Child directories should always contain 3 directories named 1,2,3
 
 ```angular2
 
