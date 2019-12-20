@@ -14,11 +14,9 @@ with the rules described.
 ## Installation
 
 ```angular2
-git clone https://gitlab.com/imthiazdev/awell-candidate-evaluation lint-project
+git clone https://github.com/imthiazSD/lint-directory lint-project
 
 cd lint-project
-
-git checkout linting_for_files_and_directories-Muhammed-Imthiaz
 
 npm install 
 
