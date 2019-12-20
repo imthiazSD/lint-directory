@@ -1,0 +1,49 @@
+{
+  "name": "project-structure-linter",
+  "description": "A simple tool to keep the directory strucutretructure of a project in check of a project ",
+  "version": "1.0.0",
+  "author": "Imthiaz Ali",
+  "bin": {
+    "lint-project": "./src/app.js"
+  },
+  "bugs": "https://github.com/project-structure-linter/project-structure-linter/issues",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "chokidar": "^3.3.0",
+    "ora": "^4.0.3"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "globby": "^10.0.1",
+    "rimraf": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/project-structure-linter/project-structure-linter",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "project-structure-linter",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "project-structure-linter/project-structure-linter",
+  "scripts": {
+    "postpack": "rimraf oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
